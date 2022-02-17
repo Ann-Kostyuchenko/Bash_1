@@ -1,0 +1,45 @@
+                                       1. Посмотреть где я === pwd
+				       2. Создать папку === mkdr namefile
+				       3. Зайти в папку === cd namefile, чтобы зайти в только что созданную папку === cd !$
+				       4. Создать 3 папки === mkdir papka_1 papka_2 papka_3
+				       5. Зайти в любую папку === cd papka_1
+				       6. Создать 5 файлов (3 txt,2 json) === touch filenameone.txt
+                                                                              touch filenametwo.txt
+									      touch filenamethree.txt
+									      touch j.one_j.json
+									      touch j.two_j.json
+				       7. Создать 3 папки === аналогично 4му пункту
+				       8. Вывести список содержимого папки === ls -la
+				       9. Открыть любой txt файл === vi filename 
+				       10. Написать туда что-нибудь, любой текст === жмем "Insert" набираем любой текст
+				       11. Сохранить и выйти === жмем "Esc"  затем в нижней части окна ":wq", файл сохраняется происходит переход в консоль
+				       12. Выйти из папки на уровень выше === cd ..
+				       13. Переместить любые 2 файла, которые создали в другую папку === mv firstfile.txt papka_1
+				                                                                         mv secondfile.txt papka_2
+				       14. Скопировать любые 2 файла, которые создали в другую папку === cp j.one_j.json papka_3
+				                                                                         cp j.two_j.json papka_3
+				       15. Найти файл по имени === find .-iname "firstfile.txt*"
+				       16. Просмотреть содержимое в реальном времени === tail -f namefile
+				       17. Вывести несколько первых строк из текстового файла === head -n2 firstfile.txt
+				       18. Вывести несколько последних строк из текстового файла === tail -n3 firstfile.txt
+				       19. Просмотреть содержимое длинного файла === less filename.txt
+				       20. Вывести ддату и время === date == текущаяя дата и время
+				                                     date +"%A %d %B" == название дня, день месяца, название месяца
+								     date +"Today is: %A %d %B" == Today is: Saturday 12 February
+
+				       * 1. Отправить http запрос на сервер http://162.55.220.72:5005/terminal-hw-request === curl "request"
+                          
+			                Ответ: {"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+
+					2. Запрос: curl http://162.55.220.72:5005/get_method?name="Ann"&age="37","result":["Your_String","Your_number"]}}      
+                
+                                        Ответ: [1] 1237
+                                        % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                        Dload  Upload   Total   Spent    Left  Speed
+                                        100    13  100    13    0     0    138      0 --:--:-- --:--:-- --:--:--   141["Ann",null]
+
+                                        [1]+  Done                    curl http://162.55.220.72:5005/get_method?name="Ann"
+
+
+                                        Еще можно так: curl -v -s -X OPTIONS "request"
+
